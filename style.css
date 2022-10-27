@@ -1,0 +1,278 @@
+:root {
+    --primary-color: #000000;
+    --accent-color: #ffffff;
+    --bg-color: #EF4730;
+    --bg-accent-color: #ffffff;
+    --text-color: #000000;
+    --text-accent: #ffffff;
+    --text-accent-100: #aaa;
+    --text-accent-300: #222222;
+    --text-accent-400: #333;
+   
+    
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+  
+    --fs-13: 0.8125rem;
+    --fs-14: 0.875rem;
+    --fs-15: 0.9375rem;
+    --fs-18: 1.125rem;
+    --fs-19: 1.1875rem;
+    --fs-20: 1.25rem;
+    --fs-30: 1.875rem;
+    --fs-36: 2.25rem;
+    --fs-40: 2.7rem;
+    --fs-48: 3rem;
+
+    --fs-body: var(--fs-14);
+    --fs-primary-heading: var(--fs-48);
+    --fs-secondary-heading: var(--fs-36);
+    --fs-nav: var(--fs-13);
+    --fs-button: var(--fs-13);
+
+  }
+
+  @media (min-width: 50em) {
+    :root {
+      --fs-body: var(--fs-18);
+      --fs-primary-heading: var(--fs-48);
+      --fs-secondary-heading: var(--fs-36);
+      --fs-nav: var(--fs-13);
+    }
+    .container {
+      max-width:1140px;
+    }
+    .book-cover {
+      transform: translateY(60px);
+    }
+    .header .flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    .header .nav .nav-list {
+      display:flex;
+      flex-direction: row;
+    }
+    .columns {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
+    .download {
+      padding-top:100px!important;
+    }
+  }
+
+/* Utility classes */
+
+.text-primary-400 {
+  color: var(--text-color);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+.text-accent-400 {
+  color: var(--text-accent-400);
+}
+.text-accent-100 {
+  color: var(--text-accent-100);
+}
+.text-accent-300 {
+  color: var(--text-accent-300);
+}
+
+
+.bg-primary-400 {
+  background-color: var(--bg-color);
+}
+.bg-accent-400 {
+  background-color: var(--bg-accent-color);
+}
+
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-13 {
+  font-size: var(--fs-13);
+}
+.fs-14 {
+  font-size: var(--fs-14);
+}
+.fs-15 {
+  font-size: var(--fs-15);
+}
+.fs-18 {
+  font-size: var(--fs-18);
+}
+
+.fs-19 {
+  font-size: var(--fs-19)
+}
+.fs-20 {
+  font-size: var(--fs-20)
+}
+.fs-30 {
+  font-size: var(--fs-30)
+}
+.fs-40 {
+  font-size: var(--fs-40)
+}
+
+/* General styling */
+
+
+body {
+  font-family: ubuntu,sans-serif;
+  font-size: var(--fs-body);
+  color: var(--primary-color);
+}
+.container {
+  width:100%;
+  padding:0px 25px;
+  margin-inline: auto;
+}
+.header {
+  padding:20px 0px;
+}
+.columns {
+  display:grid;
+}
+.columns .lnr-bullhorn, .columns .lnr-user, .columns .lnr-chart-bars, .lnr-book, .lnr-star {
+  font-size:47px;
+  color: var(--bg-color);
+}
+.columns .chapter-panel {
+  position: relative;
+  margin-bottom: 50px;
+}
+.chapters {
+  padding:60px 0px;
+}
+.chapters .columns .chapter-heading {
+    margin-bottom: 60px;
+}
+.columns .chapter-panel .chapter-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 0;
+}
+.columns .chapter-panel .chapter-content {
+  padding-left: 68px;
+}
+.chapter-content p {
+  padding:0px 10px;
+}
+.chapter-heading h2 {
+  margin-bottom: 30px;
+}
+.chapter-content h3 {
+  margin-bottom: 24px;
+}
+.hero {
+  padding-top:100px;
+}
+
+.hero .columns .hero-content {
+  padding-top: 80px;
+}
+.hero-content h1 {
+  margin-bottom:20px;
+}
+.hero-content p {
+  margin-bottom: 47px;
+}
+.nav .nav-list {
+  padding-left:0px;
+  flex-direction: column;
+}
+.nav .nav-list li {
+  padding:0px 15px;
+}
+.nav .nav-list li a {
+  font-size:var(--fs-nav);
+  color:var(--text-accent);
+}
+.feature {
+  padding:60px 0px;
+  text-align: center;
+  margin-top:120px;
+}
+.feature .feature-title {
+  padding-bottom:70px;
+}
+.feature .feature-title h2 {
+  margin-bottom: 30px;
+}
+.feature .feature-title p {
+  padding:0px 20px;
+  text-align: center;
+}
+.feature-list {
+  margin-bottom:120px;
+}
+.form {
+  margin-bottom:30px;
+}
+.testimonials-meta {
+  text-align: center;
+}
+.about .about-content {
+  padding: 117px 80px 256px 80px;
+  background-color: #F8F8F8;
+}
+.about .about-img img {
+  width:100%;
+}
+.chapters .chapter-content {
+  margin-right:40px;
+}
+.download {
+  background-color: #333;
+  text-align: center;
+  padding-top:60px;
+  padding-bottom: 100px;
+}
+.download h3 {
+  margin-bottom: 25px;
+  line-height: 58px;
+}
+.download p {
+  margin-bottom: 48px;
+}
+.download button {
+  border-radius:50px;
+  border:none;
+  background-color: #EF4730;
+  color:#ffffff;
+  padding:10px 45px;
+  text-transform: uppercase;
+}
+
+.testimonials {
+  padding:100px 0px;
+}
+.swiper {
+  width: 700px;
+  height: 300px;
+}
+footer {
+  text-align: center;
+  padding:15px;
+  font-size:12px;
+}
